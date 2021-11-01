@@ -1,0 +1,33 @@
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form-container {
+  width: 20%;
+}
+
+#print-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#print-form > div {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  font-size: 1.5em;
+}
+
+#print-form > div:last-child {
+  align-self: flex-end;
+}
+
+#print-form button {
+  padding: 8px 50px;
+}

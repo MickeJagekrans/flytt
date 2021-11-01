@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Write label</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="http://labelwriter.com/software/dls/sdk/js/dymo.connect.framework.js"></script>
+  <script src="/main.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Label writer</h1>
+    <div id="form-container">
+      <form id="print-form" onsubmit="print(event, dymo);">
+        <div>
+          <label for="box-number">Box number</label>
+          <input type="text" id="box-number" required>
+        </div>
+
+        <div>
+          <label for="room">Room</label>
+          <input id="room" list="rooms" required>
+          <datalist id="rooms">
+            <option value="Kontor"></option>
+            <option value="Klädkammare"></option>
+            <option value="Sovrum"></option>
+            <option value="Vardagsrum"></option>
+            <option value="Kök"></option>
+            <option value="Badrum uppe"></option>
+            <option value="Badrum nere"></option>
+            <option value="Barnrum"></option>
+            <option value="Vind"></option>
+          </datalist>
+        </div>
+
+        <div>
+          <button type="submit">Print labels</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
